@@ -3,21 +3,53 @@
   src: url("./fonts/crash-a-like.ttf");
 }
 
-header {
-  padding: 0.5rem 0 0.5rem 0.5rem;
-  display: block;
-  text-align: center;
+html {
+  --color-uno: #FDF033;
+  --color-dos: #6EA866;
+  --color-tres: #a52a2a;
 }
 
-.logo img {
-  width: 12rem;
-  height: 5rem;
+body {
+  padding: 0;
+  margin: 0;
 }
+
+header {
+  background-color: brown;
+  display: flex;
+  justify-content: space-between;
+}
+
+#naughty_dog {
+  height: 2rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.nav {
+  padding: 1rem;
+}
+
 
 nav a {
   font-family: crash;
-  font-size: 1.5rem;
-  font-weight: lighter;
+  color: var(--color-uno);
+  font-size: 2rem;
   text-decoration: none;
-
+  padding: 3rem;
 }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-tres);
+}
+
+img {
+  padding-top: 1rem;
+}
+
+.animate__animatedanimate.animate__bounceIn {
+  --animate-duration: 3s;
+}
+

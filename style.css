@@ -5,7 +5,6 @@
 
 *{
   box-sizing: border-box;
-  font-family: crash;
 }
 
 html {
@@ -39,7 +38,15 @@ nav {
 nav a {
   color: var(--color-uno);
   font-size: 2rem;
+  font-family: crash;
   text-decoration: none;
+  background-image: url(./imgs/tablon.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 10px;
+  padding:0 50px;
+
 }
 
 .logo {

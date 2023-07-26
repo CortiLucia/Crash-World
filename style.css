@@ -3,6 +3,10 @@
   src: url("./fonts/crash-a-like.ttf");
 }
 
+*{
+  box-sizing: border-box;
+}
+
 html {
   --color-uno: #FDF033;
   --color-dos: #6EA866;
@@ -18,16 +22,16 @@ header {
   background-color: brown;
   display: flex;
   justify-content: space-between;
+  padding: 1rem;
 }
 
 #naughty_dog {
-  height: 2rem;
-  padding-top: 1rem;
-  padding-left: 1rem;
+  height: 2.5rem;
 }
 
-.nav {
-  padding: 1rem;
+nav {
+  display: flex;
+  gap: 2rem;
 }
 
 
@@ -36,7 +40,6 @@ nav a {
   color: var(--color-uno);
   font-size: 2rem;
   text-decoration: none;
-  padding: 3rem;
 }
 
 .logo {
@@ -45,11 +48,11 @@ nav a {
   background-color: var(--color-tres);
 }
 
-img {
+.logo img {
   padding-top: 1rem;
 }
 
 .animate__animatedanimate.animate__bounceIn {
-  --animate-duration: 3s;
+  --animate-duration: 2.5s;
 }
 

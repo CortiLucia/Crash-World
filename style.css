@@ -34,7 +34,6 @@ nav {
   gap: 2rem;
 }
 
-
 nav a {
   color: var(--color-uno);
   font-size: 2rem;
@@ -46,13 +45,11 @@ nav a {
   background-position: center;
   margin-top: 10px;
   padding:0 50px;
-
 }
 
 .logo {
   display: flex;
   justify-content: center;
-  background-color: var(--color-tres);
 }
 
 .logo img {
@@ -62,4 +59,29 @@ nav a {
 .animate__animatedanimate.animate__bounceIn {
   --animate-duration: 2.5s;
 }
+
+.descripcion {
+ display: block;
+ max-width: 30%;
+ margin-left: 2rem;
+}
+
+.descripcion .titulo {
+  text-align: justify;
+  font-family: crash;
+  font-weight: lighter;
+  font-size: 2rem;
+}
+
+.descripcion .titulo span {
+color: var(--color-uno);
+font-size: 5rem;
+text-align: end;
+}
+
+.descripcion p {
+  text-align:justify;
+}
+
+
 

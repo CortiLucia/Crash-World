@@ -1,0 +1,23 @@
+@font-face {
+  font-family: crash;
+  src: url("./fonts/crash-a-like.ttf");
+}
+
+header {
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  display: block;
+  text-align: center;
+}
+
+.logo img {
+  width: 12rem;
+  height: 5rem;
+}
+
+nav a {
+  font-family: crash;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  text-decoration: none;
+
+}

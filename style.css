@@ -3,26 +3,37 @@
   src: url("./fonts/crash-a-like.ttf");
 }
 
-*{
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-  --color-uno: #FDF033;
-  --color-dos: #6EA866;
-  --color-tres: #a52a2a;
+  --color-amarillo: #FDF033;
+  --color-verde: #6EA866;
+  --color-rojo: #a52a2a;
+  --color-blanco: #fbf8f8;
+  --color-rojo-trans: rgba(165, 42, 42, 0.9);
 }
 
 body {
   padding: 0;
   margin: 0;
+  background-image: url(./imgs/fondo.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
-  background-color: brown;
+  background-color: var(--color-rojo-trans);
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+}
+
+header * {
+  opacity: 1;
 }
 
 #naughty_dog {
@@ -35,7 +46,7 @@ nav {
 }
 
 nav a {
-  color: var(--color-uno);
+  color: var(--color-amarillo);
   font-size: 2rem;
   font-family: crash;
   text-decoration: none;
@@ -43,45 +54,59 @@ nav a {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: 10px;
-  padding:0 50px;
+  padding: 0 50px;
+  padding-top: 5px;
 }
 
 .logo {
   display: flex;
   justify-content: center;
-}
-
-.logo img {
-  padding-top: 1rem;
+  margin: 3rem 0;
 }
 
 .animate__animatedanimate.animate__bounceIn {
   --animate-duration: 2.5s;
 }
 
-.descripcion {
- display: block;
- max-width: 30%;
- margin-left: 2rem;
+.bienvenido {
+  display: flex;
+  align-items: center;
 }
 
-.descripcion .titulo {
-  text-align: justify;
+.bienvenido .durazno {
+  height: 10rem;
+}
+
+.bienvenido .durazno:last-child {
+  margin-right: auto;
+}
+
+.bienvenido .descripcion {
+  display: block;
+  max-width: 40%;
+  background-color: rgba(30, 30, 30, 0.7);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-left: 4rem;
+  margin-right: auto;
+}
+
+.bienvenido .descripcion .titulo {
+  color: var(--color-blanco);
+  text-align: center;
   font-family: crash;
   font-weight: lighter;
   font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
-.descripcion .titulo span {
-color: var(--color-uno);
-font-size: 5rem;
-text-align: end;
+.bienvenido .descripcion .titulo span {
+  color: var(--color-amarillo);
+  font-size: 4rem;
 }
 
-.descripcion p {
-  text-align:justify;
+.bienvenido .descripcion p {
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--color-blanco);
+  text-align: justify;
 }
-
-
-

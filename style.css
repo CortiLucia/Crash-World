@@ -5,29 +5,35 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-  --color-uno: #FDF033;
-  --color-dos: #6EA866;
-  --color-tres: #CD1F1E;
-  --color-cuatro: #FF7C08;
-  --color-cinco: #f4fbff;
-
-
+  --color-amarillo: #FDF033;
+  --color-verde: #6EA866;
+  --color-rojo: #a52a2a;
+  --color-blanco: #fbf8f8;
+  --color-rojo-trans: rgba(165, 42, 42, 0.9);
 }
 
 body {
   padding: 0;
   margin: 0;
-
+  background-image: url(./imgs/fondo.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
-  background-color: rgba(194, 194, 194, 0.693);
+  background-color: var(--color-rojo-trans);
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
+}
+
+header * {
+  opacity: 1;
 }
 
 #naughty_dog {
@@ -40,56 +46,67 @@ nav {
 }
 
 nav a {
-  color: black;
-  font-size: 1.5rem;
+  color: var(--color-amarillo);
+  font-size: 2rem;
+  font-family: crash;
   text-decoration: none;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bolder;
+  background-image: url(./imgs/tablon.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 50px;
   padding-top: 5px;
-  padding-right: 20px;
-
 }
 
 /*.logo {
   display: flex;
   justify-content: center;
-}
-
-.logo img {
-  padding-top: 1rem;
+  margin: 3rem 0;
 }
 
 .animate__animatedanimate.animate__bounceIn {
   --animate-duration: 2.5s;
 } */
 
-.descripcion {
+.bienvenido {
   display: flex;
-  flex-direction: column;
-  background-color: var(--color-tres);
-  padding: 2rem 2rem;
-
+  align-items: center;
 }
 
-.descripcion h2 {
+.bienvenido .durazno {
+  height: 10rem;
+}
+
+.bienvenido .durazno:last-child {
+  margin-right: auto;
+}
+
+.bienvenido .descripcion {
+  display: block;
+  max-width: 40%;
+  background-color: rgba(30, 30, 30, 0.7);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-left: 4rem;
+  margin-right: auto;
+}
+
+.bienvenido .descripcion .titulo {
+  color: var(--color-blanco);
+  text-align: center;
   font-family: crash;
   font-weight: lighter;
   font-size: 2rem;
-  color: var(--color-cinco);
-  margin: 0;
+  margin-bottom: 2rem;
 }
 
-.descripcion h1 {
-  color: var(--color-uno);
-  font-family: crash;
-  font-weight: lighter;
-  font-size: 12rem;
-  margin: 0;
+.bienvenido .descripcion .titulo span {
+  color: var(--color-amarillo);
+  font-size: 4rem;
 }
 
-.descripcion p {
+.bienvenido .descripcion p {
   font-family: 'Courier New', Courier, monospace;
-  color: var(--color-cinco);
-  max-width: 33%;
-  margin: 0;
+  color: var(--color-blanco);
+  text-align: justify;
 }

@@ -3,26 +3,31 @@
   src: url("./fonts/crash-a-like.ttf");
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
 html {
   --color-uno: #FDF033;
   --color-dos: #6EA866;
-  --color-tres: #a52a2a;
+  --color-tres: #CD1F1E;
+  --color-cuatro: #FF7C08;
+  --color-cinco: #f4fbff;
+
+
 }
 
 body {
   padding: 0;
   margin: 0;
+
 }
 
 header {
-  background-color: brown;
+  background-color: rgba(194, 194, 194, 0.693);
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 #naughty_dog {
@@ -35,19 +40,17 @@ nav {
 }
 
 nav a {
-  color: var(--color-uno);
-  font-size: 2rem;
-  font-family: crash;
+  color: black;
+  font-size: 1.5rem;
   text-decoration: none;
-  background-image: url(./imgs/tablon.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: 10px;
-  padding:0 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  padding-top: 5px;
+  padding-right: 20px;
+
 }
 
-.logo {
+/*.logo {
   display: flex;
   justify-content: center;
 }
@@ -58,30 +61,35 @@ nav a {
 
 .animate__animatedanimate.animate__bounceIn {
   --animate-duration: 2.5s;
-}
+} */
 
 .descripcion {
- display: block;
- max-width: 30%;
- margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-tres);
+  padding: 2rem 2rem;
+
 }
 
-.descripcion .titulo {
-  text-align: justify;
+.descripcion h2 {
   font-family: crash;
   font-weight: lighter;
   font-size: 2rem;
+  color: var(--color-cinco);
+  margin: 0;
 }
 
-.descripcion .titulo span {
-color: var(--color-uno);
-font-size: 5rem;
-text-align: end;
+.descripcion h1 {
+  color: var(--color-uno);
+  font-family: crash;
+  font-weight: lighter;
+  font-size: 12rem;
+  margin: 0;
 }
 
 .descripcion p {
-  text-align:justify;
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--color-cinco);
+  max-width: 33%;
+  margin: 0;
 }
-
-
-

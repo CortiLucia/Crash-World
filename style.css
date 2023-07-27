@@ -10,8 +10,8 @@
 }
 
 html {
-  --color-amarillo: #FDF033;
-  --color-verde: #6EA866;
+  --color-amarillo: #fdf033;
+  --color-verde: #6ea866;
   --color-rojo: #a52a2a;
   --color-blanco: #fbf8f8;
   --color-rojo-trans: rgba(165, 42, 42, 0.9);
@@ -66,7 +66,7 @@ nav a {
 
 .animate__animatedanimate.animate__bounceIn {
   --animate-duration: 2.5s;
-} 
+}
 
 .bienvenido {
   display: flex;
@@ -87,7 +87,7 @@ nav a {
   background-color: rgba(30, 30, 30, 0.7);
   border-radius: 10px;
   padding: 1rem;
-  margin-left: 4rem;
+  margin-left: 3rem;
   margin-right: auto;
 }
 
@@ -106,7 +106,34 @@ nav a {
 }
 
 .bienvenido .descripcion p {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   color: var(--color-blanco);
   text-align: justify;
+}
+
+.historia {
+  display: flex;
+  margin: 3rem;
+  background-color: rgba(30, 30, 30, 0.7);
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+.historia h2 {
+  font-family: crash;
+  color: var(--color-blanco);
+  font-weight: lighter;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.historia .trilogia {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.5rem 0;
+}
+
+.historia .trilogia img {
+  height: 200px;
 }

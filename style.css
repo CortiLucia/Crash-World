@@ -14,7 +14,7 @@ html {
   --color-verde: #6ea866;
   --color-rojo: #a52a2a;
   --color-blanco: #fbf8f8;
-  --color-naranja:#fdac33;
+  --color-naranja: #FEBA2B;
   --color-rojo-trans: rgba(165, 42, 42, 0.9);
 }
 
@@ -56,10 +56,9 @@ nav a {
   background-repeat: no-repeat;
   background-position: center;
   padding: 0 50px;
-  padding-top: 5px;
 }
 
-nav a:hover{
+nav a:hover {
   color: var(--color-naranja);
 }
 
@@ -80,11 +79,11 @@ nav a:hover{
 
 .bienvenido .durazno {
   height: 10rem;
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
 
 .bienvenido .durazno:hover {
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }
 
 .bienvenido .durazno:last-child {
@@ -125,6 +124,7 @@ nav a:hover{
   display: flex;
   flex-direction: column;
   margin: 3rem;
+  margin-bottom: 5rem;
   background-color: rgba(30, 30, 30, 0.7);
   border-radius: 10px;
 }
@@ -146,11 +146,11 @@ nav a:hover{
 
 .historia .trilogia img {
   height: 200px;
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
 
 .historia .trilogia img:hover {
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }
 
 .historia a {
@@ -163,10 +163,50 @@ nav a:hover{
   padding-bottom: 1rem;
 }
 
-.historia a:hover{
+.historia a:hover {
   color: var(--color-naranja);
 }
 
+.separacion {
+  display: flex;
+  position: relative;
+  margin-bottom: 10px;
+  height: 100px;
+  background-image: url(./imgs/tablon2.jpg);
+  justify-content: space-between;
+}
 
+.separacion::before {
+  background-image: url(./imgs/soga.png);
+  background-repeat: repeat-x;
+  top: -10px;
+  content: "";
+  height: 10px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
 
+.separacion::after {
+  background-image: url(./imgs/soga.png);
+  background-repeat: repeat-x;
+  bottom: -10px;
+  content: "";
+  height: 10px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.separacion .aku-aku {
+  height: 200px;
+  margin-top: -70px;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+}
 

@@ -75,6 +75,11 @@ nav a {
 
 .bienvenido .durazno {
   height: 10rem;
+  transition: transform .5s;
+}
+
+.bienvenido .durazno:hover {
+  transform: scale(1.2); 
 }
 
 .bienvenido .durazno:last-child {
@@ -113,17 +118,17 @@ nav a {
 
 .historia {
   display: flex;
+  flex-direction: column;
   margin: 3rem;
   background-color: rgba(30, 30, 30, 0.7);
   border-radius: 10px;
-  flex-direction: column;
 }
 
 .historia h2 {
   font-family: crash;
   color: var(--color-blanco);
   font-weight: lighter;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   margin-top: 1rem;
 }
@@ -136,4 +141,21 @@ nav a {
 
 .historia .trilogia img {
   height: 200px;
+  transition: transform .5s;
 }
+
+.historia .trilogia img:hover {
+  transform: scale(1.2); 
+}
+
+.historia a {
+  text-align: end;
+  text-decoration: none;
+  color: var(--color-amarillo);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+
